@@ -162,7 +162,7 @@ class Grass
     m.env.first
   end
 
-  InitialEnv = [In.new, CharFn.new(?w), Succ.new, Out.new]
+  InitialEnv = [In.new, CharFn.new('w'.ord), Succ.new, Out.new]
   InitialDump = [[[], []], [[App.new(1, 1)], []]]
 
   def start(code)
